@@ -1,7 +1,7 @@
 🐦 Sparrow Flight – A Fun Flying Adventure! 🚀
 Welcome to Sparrow Flight, a simple yet exciting browser game where you control a tiny sparrow, navigating through obstacles and aiming for the highest score! 🎮✨
 
-🌐 Live Demo: Sparrow Flight on Vercel
+🌐 Live Demo: https://flooping-bird.vercel.app/
 
 🕹️ How to Play
 Press ENTER to start the game 🎯
@@ -21,7 +21,8 @@ Aim for the highest score! 🏆
 ✅ Interactive UI with animations 🔥
 
 📸 Screenshots
-(You can add screenshots here!)
+![image](https://github.com/user-attachments/assets/1dcb66aa-fb0d-4996-8d0b-4ea523d5df41)
+
 
 👨‍💻 Developed By
 Tejas Choukale
@@ -40,7 +41,7 @@ Tejas Choukale
 sh
 Copy
 Edit
-git clone https://github.com/YOUR_GITHUB_USERNAME/Sparrow-Flight.git
+git clone https://github.com/TejasChoukale/Flooping_bird
 2️⃣ Navigate to the project folder:
 
 sh
