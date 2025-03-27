@@ -3,7 +3,7 @@
     "public": true,
     "builds": [
       {
-        "src": "index.html",
+        "src": "game.html",
         "use": "@vercel/static"
       }
     ],
