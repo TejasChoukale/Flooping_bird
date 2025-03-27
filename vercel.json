@@ -3,12 +3,12 @@
     "public": true,
     "builds": [
       {
-        "src": "game.html",
+        "src": "index.html",
         "use": "@vercel/static"
       }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "/game.html" }
+      { "src": "/(.*)", "dest": "/index.html" }
     ]
   }
   
