@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparrow Flight</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <div class="player-name-modal" id="playerNameModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closePlayerModal">&times;</span>
+            <h2>Enter Player Name</h2>
+            <input type="text" id="playerNameInput" placeholder="Your Name">
+            <button id="savePlayerName">Save</button>
+        </div>
+    </div>
+
+    <div class="busted-overlay" id="bustedOverlay">
+        <div class="busted-message">
+            <h2>BUSTED!</h2>
+            <p id="finalScoreMessage">Your Score: 0</p>
+            <p id="playerNameDisplay"></p>
+            <button onclick="gameInstance.restartGame();">Play Again</button>
+        </div>
+    </div>
+
+    <div class="game-container">
+        <div id="game-header">
+            <div class="score-container">
+                <span>Score: </span>
+                <span id="score">0</span>
+            </div>
+            <div class="high-score-container">
+                <span>High Score: </span>
+                <span id="high-score">0</span>
+            </div>
+            <div class="player-name-section">
+                <button id="editPlayerName">
+                    <i class="fas fa-user-edit"></i>
+                </button>
+                <span id="displayPlayerName"></span>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div class="game-controls">
+            <button id="startButton">Start Game</button>
+            <button id="pauseButton">Pause</button>
+            <button id="restartButton">Restart</button>
+        </div>
+        <div class="instructions">
+            How to Play:
+            • Press ENTER to Start
+            • Press SPACEBAR to jump/pause
+            • Avoid green pipes
+            • Keep sparrow flying!
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="profile-section">
+            <img src="./Tejas Profile.jpg" alt="Profile" class="profile-pic">
+            <div>
+                <p>Developed by</p>
+                <p>Tejas Choukale</p>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/tejaschoukale/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/Domino_ganc" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/tejas-choukale-%F0%9F%9B%A1%EF%B8%8F-59715b254/?trk=opento_sprofile_topcard"
+                target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+
+    <script src="./game.js"></script>
+</body>
+
+</html>
